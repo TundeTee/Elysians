@@ -252,6 +252,7 @@ cursor: pointer;
 }
 .content{
   background: url(Needs/shop-1611902_1280.jpg);
+  clip-path: polygon(46% 1%, 100% 0, 100% 60%, 100% 100%, 50% 96%, 0 100%, 0 3%);
   height: 90vh;
   width: 100%;
   background-position: top 25% right 0;
@@ -481,20 +482,32 @@ color: black;
 }
 .product-container {
   display: flex;
-  justify-self: center;
-  justify-content: space-between;
-  margin: 0 10px 0 0;
-  flex-direction: column;
+flex-direction: column;
+padding-left: 80px;
+}
+.first-product{
+  border-radius: 10px;
 }
 .lines{
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
+padding-left: 80px;
 }
 .sign-content p{
   font-size: 10px;
   margin-left: 0;
+}
+input{
+  width: 130px;
+}
+.first-product #image{
+border: 6px solid #70500B;
+height: 180px;
+margin-left: 30px;
+}
+#image:hover{
+  border: 8px solid #CF920E;
+}
+.content{
+  height: 400px;
 }
 }
 
@@ -566,9 +579,9 @@ footer{
 }
 .product-container{
   display: flex;
-  justify-content: center;
-  /* margin: 10px; */
-  gap: 10px;
+  justify-content: space-between;
+  margin-left: 5px;
+  flex-wrap: wrap;
 }
 .first-product{
   border: 1px solid #70500B;
@@ -577,10 +590,11 @@ footer{
   /* margin-left: 20px; */
   background-color: whitesmoke;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 .first-product img{
   height: 120px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 .product-name{
   font-size: 20px;
@@ -631,9 +645,9 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 .sign-up-box input{
-  margin: 20px 0 0 10px;
+  margin: 40px 0 0 10px;
   background: transparent;
-  /* background-color: #CF920E; */
+  width: 300px
   padding: 10px 0 10px 0 ;
 }
 .sign-up-box button{
@@ -656,7 +670,7 @@ color: black;
 }
 
 .sign-content{
-  margin-top: 20px;
+  margin-top: 30px;
   margin-right: 5px;
   text-align: center;
   color: #fff;
